@@ -2,6 +2,7 @@ import time
 class mdsolver:
     def __init__(self,filename):
         self.f = open(filename, "w")
+        self.f.write('# '+filename[:-3]+'\n')
     
     def __del__(self):
         self.f.close
